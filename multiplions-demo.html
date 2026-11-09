@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-d2IomDPS3hWwHrmieElG7TyXsXIxX9zoTez4z58dGKg='; style-src 'unsafe-inline'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-TZSwOZmj92QVwcl4jzBRFXQ65BXg3/WEN8oxfvcJuts='; style-src 'unsafe-inline'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="description" content="Multiplions ! : application d’entraînement aux tables de multiplication pour les enfants. Sans compte, sans publicité, hors connexion.">
 <meta name="theme-color" content="#5A3CF0">
 <meta name="color-scheme" content="light dark">
@@ -4861,7 +4861,7 @@ function renderHome(keep){
     '<p class="sub">Choisis ce que tu veux travailler.'+(p.reminder&&p.reminder.on?'<br><span class="mut">🔔 Rappel '+esc(remindText(p.reminder))+'</span>':'')+'</p>'+
     (DEMO?'':'<section class="panel"><h2>Mode</h2><div class="seg c3 modes" role="group" aria-label="Mode">'+modes+'</div><p class="hint">'+mh+'</p></section>')+
     (c.mode==='eval'?difPanel:'')+(c.mode==='time'?durPanel:'')+labPanels+
-    ((c.mode==='odd'||exp||lab||bal)?'':'<section class="panel"><h2>Façon de répondre</h2><div class="seg c2" role="group" aria-label="Façon de répondre">'+ans+'</div>'+(DEMO&&c.ans!=='free'?'':'<p class="hint">'+ah+'</p>')+'</section>')+
+    ((c.mode==='odd'||exp||lab||bal)?'':'<section class="panel"><h2>Façon de répondre</h2><div class="seg c2" role="group" aria-label="Façon de répondre">'+ans+'</div>'+(DEMO?'':'<p class="hint">'+ah+'</p>')+'</section>')+
     ((DEMO||oneShot||exp||lab||bal)?'':'<section class="panel"><h2>Type de questions</h2><div class="seg c3" role="group" aria-label="Type de questions">'+q+'</div><p class="hint">'+qh+'</p></section>')+
     ((DEMO||c.mode==='time'||exp||lab||bal)?'':'<section class="panel"><h2>Nombre de questions</h2><div class="seg c5" role="group" aria-label="Nombre de questions">'+counts+'</div>'+(cth?'<p class="hint">'+cth+'</p>':'')+'</section>')+
     ((c.mode==='time'||oneShot||exp||lab||bal)?'':'<section class="panel"><h2>Tables à travailler</h2><div class="tgrid" role="group" aria-label="Tables">'+chips+'</div><div class="tools otools">'+(p.id!==GID?'<button class="btn small" data-act="t-known"'+(oralKnown(p).length?'':' disabled')+'>Connues</button>':'')+'</div>'+(DEMO?'':'<p class="hint">'+th+'</p>')+'</section>')+
