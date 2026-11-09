@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.pkoipas.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/applications.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/applications.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/applications.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/applications.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/en/applications.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/applications.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/applications.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/applications.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/multiplions.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/multiplions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/multiplions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/multiplions.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/en/multiplions.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/multiplions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/multiplions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/multiplions.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/multiplions-confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/multiplions-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/multiplions-privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/multiplions-confidentialite.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/en/multiplions-privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/multiplions-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/multiplions-privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/multiplions-confidentialite.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/mentions-legales.html"/>
+  </url>
+  <url>
+    <loc>https://www.pkoipas.fr/en/legal-notice.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pkoipas.fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pkoipas.fr/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pkoipas.fr/mentions-legales.html"/>
+  </url>
+</urlset>

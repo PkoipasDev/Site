@@ -1,0 +1,120 @@
+:root {
+  --bg: #fafaf7;
+  --fg: #1f2933;
+  --muted: #5b6770;
+  --accent: #0a7d20;
+  --accent-soft: #e3f3e5;
+  --card: #ffffff;
+  --border: #e3e6e8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14181b;
+    --fg: #e8ecee;
+    --muted: #9aa5ad;
+    --accent: #35d058;
+    --accent-soft: #1b2e22;
+    --card: #1c2226;
+    --border: #2b343a;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+a { color: var(--accent); }
+.skip { position: absolute; left: -9999px; top: 0; background: var(--card); padding: 8px 12px; z-index: 20; }
+.skip:focus { left: 8px; top: 8px; }
+
+/* Bandeau supérieur fixe */
+header.site {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.bar {
+  max-width: 960px; margin: 0 auto; padding: 8px 16px;
+  display: flex; align-items: center; gap: 8px 16px; flex-wrap: wrap;
+}
+.brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--accent); font-size: 1.3rem; font-weight: 700; order: 1; }
+.brand img { display: block; }
+.menu { display: flex; gap: 4px; order: 2; margin-left: 8px; }
+.menu a { padding: 6px 12px; border-radius: 8px; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.menu a:hover { color: var(--accent); background: var(--accent-soft); }
+.menu a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+.lang { order: 3; margin-left: auto; display: flex; gap: 2px; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.lang a, .lang span { padding: 4px 10px; text-decoration: none; color: var(--muted); }
+.lang a:hover { color: var(--accent); }
+.lang span { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+@media (max-width: 560px) {
+  .lang { order: 2; }
+  .menu { order: 3; width: 100%; margin-left: 0; justify-content: space-between; }
+  .menu a { flex: 1; text-align: center; padding: 6px 4px; }
+}
+
+main, .foot { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+main { padding-bottom: 24px; }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 32px 0 8px; }
+h2 { font-size: 1.35rem; margin: 40px 0 8px; scroll-margin-top: 80px; }
+h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+p, li { color: var(--fg); }
+.lead { color: var(--muted); font-size: 1.1rem; }
+.muted { color: var(--muted); }
+.crumb { margin: 24px 0 0; }
+
+.hero { padding: 24px 0 8px; }
+.hero h1 { font-size: 2.2rem; margin-top: 24px; }
+.button { display: inline-block; background: var(--accent); color: var(--bg); padding: 10px 18px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+.button:hover { opacity: 0.9; }
+
+
+
+footer.site { margin-top: 48px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+.foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-top: 16px; padding-bottom: 32px; }
+footer.site a { color: var(--muted); }
+footer.site a:hover { color: var(--accent); }
+
+.tagline { font-size: 1.2rem; font-weight: 600; color: var(--accent); margin: 0 0 8px; }
+.pills { list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.pills li { font-size: 0.85rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--accent); color: var(--accent); }
+.features { display: grid; gap: 12px; margin: 16px 0; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.feature { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 4px 16px 8px; }
+.feature h2, .feature h3 { margin: 12px 0 4px; }
+.feature h2 { font-size: 1.05rem; }
+.feature p { margin: 4px 0; color: var(--muted); }
+
+.gallery { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 16px; margin: 16px 0 0; }
+.shot { margin: 0; flex: 0 0 auto; scroll-snap-align: start; }
+.shot img { display: block; width: 172px; height: auto; border-radius: 24px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+@media (max-width: 560px) { .shot img { width: 62vw; } }
+.gallery { scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+
+.demo { margin: 16px 0 8px; }
+.demo-frame { display: block; width: 360px; max-width: 100%; height: 650px; border: 1px solid var(--border); border-radius: 28px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); background: #F3F1FF; }
+.cta { text-align: left; margin: 24px 0 8px; }
+
+.crumb { font-size: 0.95rem; color: var(--muted); }
+.crumb a { color: var(--muted); text-decoration: none; }
+.crumb a:hover { color: var(--accent); text-decoration: underline; }
+.crumb [aria-current] { color: var(--fg); }
+.app-icon { width: 40px; height: 40px; border-radius: 10px; flex: none; }
+
+.appcards { display: grid; grid-template-columns: repeat(auto-fill, 360px); gap: 24px; margin: 20px 0; justify-content: start; }
+.appcard { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; background: var(--app, #5B3BF0); color: #fff; border-radius: 20px; padding: 24px 0 0 24px; overflow: hidden; text-decoration: none; border: 2px solid transparent; }
+.appcard:hover, .appcard:focus-visible { border-color: rgba(255,255,255,.7); }
+.appcard .tx { padding-bottom: 24px; }
+.appcard .app-icon { width: 56px; height: 56px; border-radius: 22%; box-shadow: 0 4px 12px rgba(0,0,0,.25); display: block; }
+.appcard h2, .appcard h3 { margin: 14px 0 4px; font-size: 1.4rem; color: #fff; }
+.appcard p { margin: 0 0 14px; color: #E4DEFF; font-size: .95rem; }
+.appcard .appbtn { display: inline-block; background: #fff; color: #4A2BE0; font-weight: 700; padding: 8px 16px; border-radius: 999px; font-size: .92rem; }
+.appcard .ph { width: 140px; height: auto; border-radius: 16px 16px 0 0; margin-right: 20px; flex: none; box-shadow: 0 0 20px rgba(0,0,0,.3); }
+@media (max-width: 400px) { .appcards { grid-template-columns: 1fr; } }
+.appcard h2, .appcard h3 { white-space: nowrap; }
+@media (max-width: 400px) { .appcard { padding-left: 20px; } .appcard .ph { width: 118px; margin-right: 16px; } .appcard h2, .appcard h3 { font-size: 1.3rem; } }
+.gallery:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
